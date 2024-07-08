@@ -12,7 +12,7 @@ dotenv.config();
     TypeOrmModule.forRoot({
       type: process.env.DB_TYPE,
       host: process.env.HOST,
-      port: process.env.PORT,
+      port: +process.env.PORT,
       username: process.env.USERNAME,
       password: process.env.PASSWORD,
       database: process.env.DATABASE,
@@ -30,7 +30,9 @@ export class AppModule {
       .apply(ApiKeyMiddleware)
       .forRoutes(
         { path: 'subnet/registerResponse', method: RequestMethod.POST },
+        { path: 'subnet/registerLatestVoting', method: RequestMethod.POST },
         { path: 'subnet/getNextRequest', method: RequestMethod.GET },
+        { path: 'subnet/getNextRequests', method: RequestMethod.GET },
       );
   }
 }

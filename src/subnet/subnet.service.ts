@@ -6,18 +6,21 @@ import {
 import { InjectRepository } from '@nestjs/typeorm';
 import { TwitterResponseEntity } from './entity/twitterResponse.entity';
 import { Repository } from 'typeorm';
-import { CreateTwitterResponseDto } from './entity/create-twitter-response.dto';
-import { RegisteredModelsEntity } from './entity/registered-models.entity';
+import { CreateTwitterResponseDto } from './entity/createTwitterResponse.dto';
 import { HttpService } from '@nestjs/axios';
 import { TwitterApi } from 'twitter-api-v2';
 
 import { queries } from './queries';
+import { RegisterVotingDto } from './entity/registerVoting.dto';
+import { RegisteredModelsEntity } from './entity/registeredModels.entity';
 
 @Injectable()
 export class SubnetService {
   private queryCounts: Map<string, number> = new Map();
+  private queryOpenCounts: Map<string, number> = new Map();
   private lastGlobalExecutionTime: number = 0;
   private blacklist: Map<string, number> = new Map();
+  private latestVoting: string;
 
   private twitterClient;
 
@@ -32,6 +35,7 @@ export class SubnetService {
   }
 
   private currentIndex = 0;
+  private currentOpenIndex = 0;
 
   logBlacklist() {
     const blacklistArray = Array.from(this.blacklist.entries());
@@ -161,4 +165,118 @@ export class SubnetService {
     const percentage = this.getMatchingPercentage(arr1, arr2);
     return percentage >= 95;
   };
+
+  async registerVoting(
+    voting: RegisterVotingDto,
+    apiKey: string,
+  ): Promise<any> {
+    const user = await this.registeredModelsRepository.find({
+      where: { id: apiKey },
+    });
+    if (user.length === 0) {
+      throw new NotFoundException();
+    }
+    try {
+      this.latestVoting = voting.voting;
+      return true;
+    } catch (e) {
+      throw new BadRequestException();
+    }
+  }
+
+  async getLatestVoting(): Promise<any> {
+    if (this.latestVoting) {
+      return this.latestVoting;
+    }
+    throw new NotFoundException('Voting not registered.');
+  }
+
+  async getNextOpenRequest(): Promise<any> {
+    const request = queries[this.currentOpenIndex];
+    this.currentOpenIndex = (this.currentOpenIndex + 1) % queries.length;
+    return request;
+  }
+
+  async getNextOpenRequests(count: number): Promise<any> {
+    const collectedRequests = [];
+    for (let i = 0; i < count; i++) {
+      collectedRequests.push(queries[this.currentOpenIndex]);
+      this.currentOpenIndex = (this.currentOpenIndex + 1) % queries.length;
+    }
+    return collectedRequests;
+  }
+
+  async createTwitterOpenResponse(
+    createDto: CreateTwitterResponseDto,
+    validatorId: string,
+  ): Promise<any> {
+    try {
+      const newResponse = this.twitterResponseRepository.create({
+        ...createDto,
+        promptId: createDto.promptId,
+        validatorId,
+      });
+
+      try {
+        await this.twitterResponseRepository.save(newResponse);
+        const userContent = JSON.parse(createDto.content);
+        if (this.blacklist.has(createDto.minerId)) {
+          return 0.05;
+        }
+        const minerIdToCheck = createDto.minerId;
+        const queryCount = (this.queryOpenCounts.get(minerIdToCheck) || 0) + 1;
+        this.queryOpenCounts.set(minerIdToCheck, queryCount);
+
+        const currentTime = Date.now();
+        const globalTimeElapsed = currentTime - this.lastGlobalExecutionTime;
+
+        if (
+          (queryCount > 100 || Math.random() < 0.01) &&
+          globalTimeElapsed > 10000
+        ) {
+          this.lastGlobalExecutionTime = currentTime;
+          const readOnlyClient = this.twitterClient.readOnly;
+          const query = queries.find(
+            (obj) => obj.promptId === +createDto.promptId,
+          ).query;
+
+          const userStartTime = userContent[0].created_at;
+          const userStartDate = new Date(userStartTime);
+          const currentDate = new Date();
+          const diffInMillis = currentDate.getTime() - userStartDate.getTime();
+          const diffInMinutes = diffInMillis / (1000 * 60);
+          const isDiffLongerThanFiveMinutes = diffInMinutes > 0.5;
+          const options = {
+            max_results: 50,
+            start_time: '2024-04-01T5:00:00Z',
+            'user.fields': 'id',
+            'tweet.fields': 'created_at',
+          };
+          if (!isDiffLongerThanFiveMinutes) {
+            options['end_time'] = userStartTime;
+          }
+          try {
+            const jsTweets = await readOnlyClient.v2.searchAll(query, options);
+            const tweets = [];
+            for (const tweet of jsTweets) {
+              tweets.push(tweet);
+            }
+            const passed = this.isNinetyPercentMatch(tweets, userContent);
+            this.queryCounts.set(minerIdToCheck, 0);
+            if (!passed) {
+              this.blacklist.set(createDto.minerId, new Date().getTime());
+              return 0.05;
+            }
+          } catch (e) {
+            return 0;
+          }
+        }
+        return 1;
+      } catch (e) {
+        return 0.05;
+      }
+    } catch (e) {
+      throw new BadRequestException();
+    }
+  }
 }
