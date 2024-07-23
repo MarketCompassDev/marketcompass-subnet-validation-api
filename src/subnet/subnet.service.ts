@@ -140,16 +140,102 @@ export class SubnetService {
 
   async getNextRequests(apiKey: string, count: number): Promise<any> {
     const user = await this.registeredModelsRepository.find({
-      where: { id: apiKey },
+      where: {id: apiKey}
     });
     if (user.length === 0) {
       throw new NotFoundException();
     }
+
     const collectedRequests = [];
-    for (let i = 0; i < count; i++) {
-      collectedRequests.push(queries[this.currentIndex]);
-      this.currentIndex = (this.currentIndex + 1) % queries.length;
+    const sampleRequests = [
+      {
+        promptId: 1000,
+        queryParams: {
+          "max_results": 50,
+          "start_time": "2024-04-01T05:00:00Z",
+          "user.fields": "id,username,name",
+          "tweet.fields": "created_at,author_id"
+        },
+        query: "bitcoin lang:en -is:retweet -copy -spam is:verified"
+      },
+      {
+        promptId: 1001,
+        queryParams: {
+          "max_results": 50,
+          "start_time": "2024-04-01T05:00:00Z",
+          "user.fields": "id,username,name",
+          "tweet.fields": "created_at,author_id"
+        },
+        query: "ethereum lang:en -is:retweet -copy -spam is:verified"
+      },
+      {
+        promptId: 1002,
+        queryParams: {
+          "max_results": 50,
+          "start_time": "2024-04-01T05:00:00Z",
+          "user.fields": "id,username,name",
+          "tweet.fields": "created_at,author_id"
+        },
+        query: "eth lang:en -is:retweet -copy -spam is:verified"
+      },
+      {
+        promptId: 1003,
+        queryParams: {
+          "max_results": 50,
+          "start_time": "2024-04-01T05:00:00Z",
+          "user.fields": "id,username,name",
+          "tweet.fields": "created_at,author_id"
+        },
+        query: "bittensor lang:en -is:retweet -copy -spam is:verified"
+      },
+      {
+        promptId: 1004,
+        queryParams: {
+          "max_results": 50,
+          "start_time": "2024-04-01T05:00:00Z",
+          "user.fields": "id,username,name",
+          "tweet.fields": "created_at,author_id"
+        },
+        query: "meme lang:en -is:retweet -copy -spam is:verified"
+      },
+      {
+        promptId: 1005,
+        queryParams: {
+          "max_results": 50,
+          "start_time": "2024-04-01T05:00:00Z",
+          "user.fields": "id,username,name",
+          "tweet.fields": "created_at,author_id"
+        },
+        query: "crypto lang:en -is:retweet -copy -spam is:verified"
+      },
+      {
+        promptId: 1006,
+        queryParams: {
+          "max_results": 50,
+          "start_time": "2024-04-01T05:00:00Z",
+          "user.fields": "id,username,name",
+          "tweet.fields": "created_at,author_id"
+        },
+        query: `"artificial intelligence" lang:en -is:retweet -copy -spam is:verified`
+      }
+    ];
+
+    let remainingCount = count;
+    let sampleIndex = Math.floor(Math.random() * sampleRequests.length);
+
+    while (remainingCount > 0) {
+      if (remainingCount > 0) {
+        collectedRequests.push(queries[this.currentIndex]);
+        this.currentIndex = (this.currentIndex + 1) % queries.length;
+        remainingCount--;
+      }
+      if (remainingCount > 0) {
+        collectedRequests.push(sampleRequests[sampleIndex]);
+        sampleIndex = (sampleIndex + 1) % sampleRequests.length;
+        remainingCount--;
+      }
     }
+
     return collectedRequests;
   }
 

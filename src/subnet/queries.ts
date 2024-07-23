@@ -7,8 +7,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'ethereum etf lang:en -is:retweet -copy -"telegram" -meme -🚀 -t.me -https -http is:verified',
+    query: 'ethereum etf lang:en -is:retweet -copy -"telegram" -meme -🚀 -t.me -https -http is:verified',
   },
   {
     promptId: 1,
@@ -18,8 +17,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'bitcoin etf lang:en -is:retweet -copy -"telegram" -meme -🚀 -t.me -https -http is:verified',
+    query: 'bitcoin etf lang:en -is:retweet -copy -"telegram" -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 2,
@@ -29,8 +27,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'otc market lang:en -is:retweet -copy -"telegram" -meme -🚀 -t.me -https -http is:verified',
+    query: 'otc market lang:en -is:retweet -copy -"telegram" -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 3,
@@ -40,8 +37,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'bitcoin trust lang:en -is:retweet -copy -"telegram" -meme -🚀 -t.me -https -http is:verified',
+    query: 'bitcoin trust lang:en -is:retweet -copy -"telegram" -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 4,
@@ -51,9 +47,18 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'rune OR runes OR ordinals lang:en -is:retweet -copy -"telegram" -meme -🚀 -t.me -https -http is:verified',
+    query: 'rune OR runes OR ordinals lang:en -is:retweet -copy -"telegram" -meme -🚀 -t.me -https -http is:verified'
   },
+  // {
+  //     promptId: 5,
+  //     queryParams: {
+  //         max_results: 50,
+  //         start_time: '2024-04-01T5:00:00Z',
+  //         'user.fields': 'id,username,name',
+  //         'tweet.fields': 'created_at,author_id',
+  //     },
+  //     query: '(ethereum foundation) OR (eth foundation) OR (ETH) lang:en -is:retweet -copy -"telegram" -meme -🚀 -t.me -https -http is:verified'
+  // },
   {
     promptId: 6,
     queryParams: {
@@ -62,10 +67,9 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'DAG lang:en -is:retweet -copy -"telegram" -meme -🚀 -t.me -https -http is:verified',
-  },
-  {
+    // query: 'DAG blockchain lang:en -is:retweet -copy -"telegram" -meme -🚀 -t.me -https -http is:verified'
+    query: 'DAG lang:en -is:retweet -copy -"telegram" -meme -🚀 -t.me -https -http is:verified'
+  }, {
     promptId: 7,
     queryParams: {
       max_results: 50,
@@ -73,10 +77,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'layer 1 lang:en -is:retweet -copy -"telegram" -meme -🚀 -t.me -https -http is:verified',
-  },
-  {
+    query: 'layer 1 lang:en -is:retweet -copy -"telegram" -meme -🚀 -t.me -https -http is:verified'
+  }, {
     promptId: 8,
     queryParams: {
       max_results: 50,
@@ -84,10 +86,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(substrate) OR (new projects substrate) OR (project substrate) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -bitcoin -ethereum -solana -polygon -dot -polkadot  is:verified',
-  },
-  {
+    query: '(substrate) OR (new projects substrate) OR (project substrate) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -bitcoin -ethereum -solana -polygon -dot -polkadot  is:verified'
+  }, {
     promptId: 9,
     queryParams: {
       max_results: 50,
@@ -95,10 +95,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(web3 ai agent) OR (ai agent web3) OR (decentralized ai) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -bitcoin -ethereum -solana -polygon is:verified',
-  },
-  {
+    query: '(web3 ai agent) OR (ai agent web3) OR (decentralized ai) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -bitcoin -ethereum -solana -polygon is:verified'
+  }, {
     promptId: 10,
     queryParams: {
       max_results: 50,
@@ -106,9 +104,18 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(next big) OR (next L1) OR (next L1) lang:en -is:retweet -ethereum -bitcoin -solana -polygon -nft -airdrop --buy --sell -bearmarket -bullmarket -whitepaper is:verified',
+    query: '(next big) OR (next L1) OR (next L1) lang:en -is:retweet -ethereum -bitcoin -solana -polygon -nft -airdrop --buy --sell -bearmarket -bullmarket -whitepaper is:verified'
   },
+  // {
+  //     promptId: 11,
+  //     queryParams: {
+  //         max_results: 50,
+  //         start_time: '2024-04-01T5:00:00Z',
+  //         'user.fields': 'id,username,name',
+  //         'tweet.fields': 'created_at,author_id',
+  //     },
+  //     query: '(otc crypto market) OR (otc cryptocurrency market) OR (otc digital asset market) lang:en -is:retweet -crypto.com -binance -coinbase --buy --sell'
+  // },
   {
     promptId: 12,
     queryParams: {
@@ -117,10 +124,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(otc crypto market) OR (otc cryptocurrency market) OR (otc digital asset market) lang:en -is:retweet -crypto.com -binance -coinbase --buy --sell is:verified',
-  },
-  {
+    query: '(otc crypto market) OR (otc cryptocurrency market) OR (otc digital asset market) lang:en -is:retweet -crypto.com -binance -coinbase --buy --sell is:verified'
+  }, {
     promptId: 13,
     queryParams: {
       max_results: 50,
@@ -128,9 +133,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query: 'crypto trend lang:en -is:retweet -"telegram" -meme is:verified',
-  },
-  {
+    query: 'crypto trend lang:en -is:retweet -"telegram" -meme is:verified'
+  }, {
     promptId: 14,
     queryParams: {
       max_results: 50,
@@ -138,9 +142,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query: 'crypto volume lang:en -is:retweet -"telegram" -meme is:verified',
-  },
-  {
+    query: 'crypto volume lang:en -is:retweet -"telegram" -meme is:verified'
+  }, {
     promptId: 15,
     queryParams: {
       max_results: 50,
@@ -148,9 +151,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query: 'token volume lang:en -is:retweet -"telegram" -meme is:verified',
-  },
-  {
+    query: 'token volume lang:en -is:retweet -"telegram" -meme is:verified'
+  }, {
     promptId: 16,
     queryParams: {
       max_results: 50,
@@ -158,9 +160,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query: 'otc only lang:en -is:retweet -"telegram" -meme is:verified',
-  },
-  {
+    query: 'otc only lang:en -is:retweet -"telegram" -meme is:verified'
+  }, {
     promptId: 17,
     queryParams: {
       max_results: 50,
@@ -168,9 +169,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query: 'off the market lang:en -is:retweet -"telegram" -meme is:verified',
-  },
-  {
+    query: 'off the market lang:en -is:retweet -"telegram" -meme is:verified'
+  }, {
     promptId: 18,
     queryParams: {
       max_results: 50,
@@ -178,9 +178,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query: 'sec regulation lang:en -is:retweet -"telegram" -meme is:verified',
-  },
-  {
+    query: 'sec regulation lang:en -is:retweet -"telegram" -meme is:verified'
+  }, {
     promptId: 19,
     queryParams: {
       max_results: 50,
@@ -188,9 +187,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query: 'depin lang:en -is:retweet -"telegram" -meme is:verified',
-  },
-  {
+    query: 'depin lang:en -is:retweet -"telegram" -meme is:verified'
+  }, {
     promptId: 20,
     queryParams: {
       max_results: 50,
@@ -198,9 +196,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query: 'low cap lang:en -is:retweet -"telegram" -meme is:verified',
-  },
-  {
+    query: 'low cap lang:en -is:retweet -"telegram" -meme is:verified'
+  }, {
     promptId: 21,
     queryParams: {
       max_results: 50,
@@ -208,9 +205,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query: 'usdt buy lang:en -is:retweet -"telegram" -meme is:verified',
-  },
-  {
+    query: 'usdt buy lang:en -is:retweet -"telegram" -meme is:verified'
+  }, {
     promptId: 22,
     queryParams: {
       max_results: 50,
@@ -218,10 +214,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(next btc etf) OR (next bitcoin etf) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -ethereum -solana -polygon -"crypto trading" -"bitcoin trading" is:verified',
-  },
-  {
+    query: '(next btc etf) OR (next bitcoin etf) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -ethereum -solana -polygon -"crypto trading" -"bitcoin trading" is:verified'
+  }, {
     promptId: 23,
     queryParams: {
       max_results: 50,
@@ -229,10 +223,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(crypto innovations) OR (cryptocurrency innovations) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -bitcoin -ethereum -solana -polygon -"crypto trading" -"bitcoin trading" is:verified',
-  },
-  {
+    query: '(crypto innovations) OR (cryptocurrency innovations) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -bitcoin -ethereum -solana -polygon -"crypto trading" -"bitcoin trading" is:verified'
+  }, {
     promptId: 24,
     queryParams: {
       max_results: 50,
@@ -240,10 +232,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(blockchain technology trends) OR (blockchain tech trends) OR (blockchain trends) OR ( tech trends)  OR (blockchain tech) OR (blockchain) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -bitcoin -ethereum -solana -polygon -"crypto trading" -"bitcoin trading" -"web3" -metaverse  is:verified',
-  },
-  {
+    query: '(blockchain technology trends) OR (blockchain tech trends) OR (blockchain trends) OR ( tech trends)  OR (blockchain tech) OR (blockchain) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -bitcoin -ethereum -solana -polygon -"crypto trading" -"bitcoin trading" -"web3" -metaverse  is:verified'
+  }, {
     promptId: 25,
     queryParams: {
       max_results: 50,
@@ -251,10 +241,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(blockchain technologies) OR (emerging technologies) OR (emerging blockchain) OR (crypto technologies) OR (emerging crypto) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -bitcoin -ethereum -solana -polygon -"crypto trading" -"bitcoin trading" -"web3" -metaverse is:verified',
-  },
-  {
+    query: '(blockchain technologies) OR (emerging technologies) OR (emerging blockchain) OR (crypto technologies) OR (emerging crypto) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -bitcoin -ethereum -solana -polygon -"crypto trading" -"bitcoin trading" -"web3" -metaverse is:verified'
+  }, {
     promptId: 26,
     queryParams: {
       max_results: 50,
@@ -262,10 +250,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(crypto predictions) OR (cryptocurrency predictions) OR (bitcoin predictions) OR (market prediction) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -"crypto trading" -"bitcoin trading" -"web3" -metaverse is:verified',
-  },
-  {
+    query: '(crypto predictions) OR (cryptocurrency predictions) OR (bitcoin predictions) OR (market prediction) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -"crypto trading" -"bitcoin trading" -"web3" -metaverse is:verified'
+  }, {
     promptId: 27,
     queryParams: {
       max_results: 50,
@@ -273,8 +259,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(otc crypto) OR (otc market) OR (otc cryptocurrency market) OR (otc digital asset market) lang:en -is:retweet -crypto.com -binance -coinbase --buy --sell is:verified',
+    query: '(otc crypto) OR (otc market) OR (otc cryptocurrency market) OR (otc digital asset market) lang:en -is:retweet -crypto.com -binance -coinbase --buy --sell is:verified'
   },
   {
     promptId: 28,
@@ -284,8 +269,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'Ethereum ETF lang:en -is:retweet -nft -"crypto scam" -"market crash" --buy --sell -airdrop -"crypto regulation"',
+    // query: '(Ethereum ETF launch) OR (latest Ethereum ETF news) OR (Ethereum ETF updates) OR (news about Ethereum ETFs) (Ethereum ETF analysis) lang:en -is:retweet -nft -"crypto scam" -"market crash" --buy --sell -airdrop -"crypto regulation"'//ok
+    query: 'Ethereum ETF lang:en -is:retweet -nft -"crypto scam" -"market crash" --buy --sell -airdrop -"crypto regulation"'
   },
   {
     promptId: 29,
@@ -295,8 +280,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'Ethereum ETFs lang:en -is:retweet -nft -"crypto scam" -"market crash" --buy --sell -airdrop -"crypto regulation"',
+    query: 'Ethereum ETFs lang:en -is:retweet -nft -"crypto scam" -"market crash" --buy --sell -airdrop -"crypto regulation"'//ok
   },
   {
     promptId: 30,
@@ -306,8 +290,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'Eth ETFs lang:en -is:retweet -nft -"crypto scam" -"market crash" --buy --sell -airdrop -"crypto regulation"',
+    query: 'Eth ETFs lang:en -is:retweet -nft -"crypto scam" -"market crash" --buy --sell -airdrop -"crypto regulation"'//ok
   },
   {
     promptId: 31,
@@ -317,8 +300,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto ETFs lang:en -is:retweet -nft -"crypto scam" -"market crash" --buy --sell -airdrop -"crypto regulation"',
+    query: 'crypto ETFs lang:en -is:retweet -nft -"crypto scam" -"market crash" --buy --sell -airdrop -"crypto regulation"'//ok
   },
   {
     promptId: 32,
@@ -328,10 +310,8 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(crypto adoption) OR (crypto regulation) OR (crypto environmental impact) OR (cryptocurrency economic effects) OR (Ethereum scalability) lang:en -is:retweet -nft -bitcoin -ethereum -solana -polygon -buy -sell -airdrop',
-  },
-  {
+    query: '(crypto adoption) OR (crypto regulation) OR (crypto environmental impact) OR (cryptocurrency economic effects) OR (Ethereum scalability) lang:en -is:retweet -nft -bitcoin -ethereum -solana -polygon -buy -sell -airdrop'//ok
+  }, {
     promptId: 33,
     queryParams: {
       max_results: 50,
@@ -339,8 +319,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(Solana performance) OR (Layer 1 solutions) OR (BTC Layer 2) OR (AI crypto trading) OR (Ethereum scalability) lang:en -is:retweet -nft -bitcoin -solana -polygon -buy -sell -airdrop',
+    query: '(Solana performance) OR (Layer 1 solutions) OR (BTC Layer 2) OR (AI crypto trading) OR (Ethereum scalability) lang:en -is:retweet -nft -bitcoin -solana -polygon -buy -sell -airdrop'//ok
   },
   {
     promptId: 34,
@@ -350,8 +329,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(ai crypto trading) OR (ai cryptocurrency trading) OR (ai blockchain trading) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket -buy -sell -solana -polygon -web3 -metaverse',
+    query: '(ai crypto trading) OR (ai cryptocurrency trading) OR (ai blockchain trading) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket -buy -sell -solana -polygon -web3 -metaverse'//ok
   },
   {
     promptId: 35,
@@ -361,8 +339,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(crypto environmental impact) OR (cryptocurrency environmental impact) OR (blockchain environmental impact) OR (crypto regulation updates) OR (cryptocurrency regulation updates) OR (blockchain regulation updates) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket -buy -sell -solana -polygon -web3 -metaverse',
+    query: '(crypto environmental impact) OR (cryptocurrency environmental impact) OR (blockchain environmental impact) OR (crypto regulation updates) OR (cryptocurrency regulation updates) OR (blockchain regulation updates) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket -buy -sell -solana -polygon -web3 -metaverse'
   },
   {
     promptId: 36,
@@ -372,8 +349,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(ai smart contracts) OR (ai blockchain integration) OR (cryptocurrency economic) OR (crypto economic) OR (blockchain economic) OR (emerging crypto) OR (emerging blockchain) OR (cryptocurrency market predictions) OR (bitcoin market predictions 2024) OR (crypto adoption stories) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket -buy -sell -solana -polygon -web3 -metaverse',
+    query: '(ai smart contracts) OR (ai blockchain integration) OR (cryptocurrency economic) OR (crypto economic) OR (blockchain economic) OR (emerging crypto) OR (emerging blockchain) OR (cryptocurrency market predictions) OR (bitcoin market predictions 2024) OR (crypto adoption stories) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket -buy -sell -solana -polygon -web3 -metaverse'
   },
   {
     promptId: 37,
@@ -383,8 +359,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(crypto security) OR (blockchain interoperability) OR (dao governance) OR (zero knowledge proof) OR (blockchain supply chain) OR (crypto wallet innovations) OR (defi trends) OR (blockchain gaming adoption) OR (new layer 1 blockchain) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -solana -polygon',
+    query: '(crypto security) OR (blockchain interoperability) OR (dao governance) OR (zero knowledge proof) OR (blockchain supply chain) OR (crypto wallet innovations) OR (defi trends) OR (blockchain gaming adoption) OR (new layer 1 blockchain) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -solana -polygon'
   },
   {
     promptId: 38,
@@ -394,8 +369,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(decentralized social media) OR (blockchain iot) OR (crypto tax) OR (blockchain renewable energy) OR (stablecoin innovations) OR (blockchain healthcare) OR (ai crypto trading) OR (blockchain identity solutions) OR (defi lending platform) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -solana -polygon',
+    query: '(decentralized social media) OR (blockchain iot) OR (crypto tax) OR (blockchain renewable energy) OR (stablecoin innovations) OR (blockchain healthcare) OR (ai crypto trading) OR (blockchain identity solutions) OR (defi lending platform) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -solana -polygon'
   },
   {
     promptId: 39,
@@ -405,8 +379,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(ai agent) OR (ai language models) OR (quantum blockchain security) OR (blockchain music) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -solana -polygon',
+    query: '(ai agent) OR (ai language models) OR (quantum blockchain security) OR (blockchain music) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -solana -polygon'
   },
   {
     promptId: 40,
@@ -416,8 +389,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'ai crypto lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket -join -buy -sell -solana -polygon',
+    query: 'ai crypto lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket -join -buy -sell -solana -polygon'
   },
   {
     promptId: 41,
@@ -427,8 +399,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto market lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -solana -polygon',
+    query: 'crypto market lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket --buy --sell -solana -polygon'
   },
   {
     promptId: 42,
@@ -438,8 +409,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      '(crypto development) OR (crypto growth) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket -buy -solana -polygon',
+    query: '(crypto development) OR (crypto growth) lang:en -is:retweet -nft -airdrop -whitepaper -bearmarket -bullmarket -buy -solana -polygon'
   },
   {
     promptId: 43,
@@ -449,8 +419,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain adoption lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain adoption lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 44,
@@ -460,8 +429,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto regulation news lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto regulation news lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 45,
@@ -471,8 +439,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'digital asset market lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'digital asset market lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 46,
@@ -482,8 +449,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain gaming lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain gaming lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 47,
@@ -493,8 +459,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto security lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto security lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 48,
@@ -504,8 +469,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'decentralized finance trends lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'decentralized finance trends lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 49,
@@ -515,8 +479,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto trading bots lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto trading bots lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 50,
@@ -526,8 +489,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain scalability lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain scalability lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 51,
@@ -537,8 +499,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto market insights lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto market insights lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 52,
@@ -548,8 +509,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain technology updates lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain technology updates lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 53,
@@ -559,8 +519,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto payments lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto payments lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 54,
@@ -570,8 +529,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'cryptocurrency wallets lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'cryptocurrency wallets lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 55,
@@ -581,8 +539,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto taxes lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto taxes lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 56,
@@ -592,8 +549,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain identity lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain identity lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 57,
@@ -603,8 +559,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto lending lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto lending lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 58,
@@ -614,8 +569,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'defi staking lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'defi staking lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 59,
@@ -625,8 +579,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto yield farming lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto yield farming lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 60,
@@ -636,8 +589,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain supply chain lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain supply chain lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 61,
@@ -647,8 +599,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto gaming lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto gaming lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 62,
@@ -658,8 +609,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain healthcare lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain healthcare lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 63,
@@ -669,8 +619,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto adoption news lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto adoption news lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 64,
@@ -680,8 +629,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain integration lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain integration lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 65,
@@ -691,8 +639,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto investment lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto investment lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 66,
@@ -702,8 +649,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain research lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain research lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 67,
@@ -713,8 +659,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto regulations update lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto regulations update lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 68,
@@ -724,8 +669,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto asset management lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto asset management lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 69,
@@ -735,8 +679,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'decentralized exchange lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'decentralized exchange lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 70,
@@ -746,8 +689,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto philanthropy lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto philanthropy lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 71,
@@ -757,8 +699,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain energy lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain energy lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 72,
@@ -768,8 +709,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto donations lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto donations lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 73,
@@ -779,8 +719,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain charity lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain charity lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 74,
@@ -790,8 +729,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain voting lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain voting lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 75,
@@ -801,8 +739,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto remittances lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto remittances lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 76,
@@ -812,8 +749,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'decentralized governance lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'decentralized governance lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 77,
@@ -823,8 +759,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto privacy lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto privacy lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 78,
@@ -834,8 +769,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain transparency lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain transparency lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 79,
@@ -845,8 +779,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto forensics lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto forensics lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 80,
@@ -856,8 +789,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain logistics lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain logistics lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 81,
@@ -867,8 +799,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto insurance lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto insurance lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 82,
@@ -878,8 +809,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain property lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain property lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 83,
@@ -889,8 +819,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto trading bots lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto trading bots lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 84,
@@ -900,8 +829,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'decentralized storage lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'decentralized storage lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 85,
@@ -911,8 +839,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto real estate lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto real estate lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 86,
@@ -922,8 +849,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto dividends lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto dividends lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 87,
@@ -933,8 +859,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain finance lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain finance lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 88,
@@ -944,8 +869,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto banking lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto banking lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 89,
@@ -955,8 +879,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain investment lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain investment lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 90,
@@ -966,8 +889,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'decentralized insurance lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'decentralized insurance lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 91,
@@ -977,8 +899,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto savings lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto savings lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 92,
@@ -988,8 +909,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto wealth management lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto wealth management lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 93,
@@ -999,8 +919,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'decentralized cloud lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'decentralized cloud lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 94,
@@ -1010,8 +929,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto index funds lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto index funds lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 95,
@@ -1021,8 +939,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain infrastructure lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain infrastructure lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 96,
@@ -1032,8 +949,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto market analysis lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto market analysis lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 97,
@@ -1043,8 +959,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain for business lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain for business lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 98,
@@ -1054,8 +969,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto research lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto research lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 99,
@@ -1065,8 +979,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto market forecast lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto market forecast lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 100,
@@ -1076,8 +989,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'decentralized internet lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'decentralized internet lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 101,
@@ -1087,8 +999,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto loan lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto loan lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 102,
@@ -1098,8 +1009,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto dividends lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto dividends lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 103,
@@ -1109,8 +1019,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'decentralized identity lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'decentralized identity lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 104,
@@ -1120,8 +1029,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto ecosystem lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto ecosystem lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 105,
@@ -1131,8 +1039,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain governance lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain governance lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 106,
@@ -1142,8 +1049,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto portfolio lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto portfolio lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 107,
@@ -1153,8 +1059,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'decentralized internet lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'decentralized internet lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 108,
@@ -1164,8 +1069,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto custody lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto custody lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 109,
@@ -1175,8 +1079,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain energy lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain energy lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 110,
@@ -1186,8 +1089,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto insurance lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto insurance lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 111,
@@ -1197,8 +1099,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain logistics lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain logistics lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 112,
@@ -1208,8 +1109,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto trading strategies lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto trading strategies lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 113,
@@ -1219,8 +1119,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain research lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain research lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 114,
@@ -1230,8 +1129,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto education lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto education lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 115,
@@ -1241,8 +1139,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain scalability lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain scalability lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 116,
@@ -1252,8 +1149,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto privacy lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto privacy lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 117,
@@ -1263,8 +1159,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain innovation lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain innovation lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 118,
@@ -1274,8 +1169,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto loans lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto loans lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 119,
@@ -1285,8 +1179,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain solutions lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain solutions lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 120,
@@ -1296,8 +1189,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto news lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto news lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 121,
@@ -1307,8 +1199,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain finance lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain finance lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 122,
@@ -1318,8 +1209,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto wallets lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto wallets lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 123,
@@ -1329,8 +1219,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain security lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain security lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 124,
@@ -1340,8 +1229,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto investments lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto investments lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 125,
@@ -1351,8 +1239,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain trends lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain trends lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 126,
@@ -1362,8 +1249,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto analytics lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto analytics lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 127,
@@ -1373,8 +1259,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain updates lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain updates lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 128,
@@ -1384,8 +1269,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto ecosystem lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto ecosystem lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 129,
@@ -1395,8 +1279,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain interoperability lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain interoperability lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 130,
@@ -1406,8 +1289,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto forensics lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto forensics lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 131,
@@ -1417,8 +1299,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain logistics lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain logistics lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 132,
@@ -1428,8 +1309,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto staking lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto staking lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 133,
@@ -1439,8 +1319,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain monitoring lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain monitoring lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 134,
@@ -1450,8 +1329,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto derivatives lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto derivatives lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 135,
@@ -1461,8 +1339,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain applications lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain applications lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 136,
@@ -1472,8 +1349,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto liquidity lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto liquidity lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 137,
@@ -1483,8 +1359,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain adoption lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain adoption lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 138,
@@ -1494,8 +1369,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto futures lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto futures lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 139,
@@ -1505,8 +1379,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain impact lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain impact lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 140,
@@ -1516,8 +1389,17 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto prediction lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto prediction lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
+  },
+  {
+    promptId: 141,
+    queryParams: {
+      max_results: 50,
+      start_time: '2024-04-01T5:00:00Z',
+      'user.fields': 'id,username,name',
+      'tweet.fields': 'created_at,author_id',
+    },
+    query: 'blockchain transparency lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 142,
@@ -1527,8 +1409,7 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'crypto custody lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'crypto custody lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
   {
     promptId: 143,
@@ -1538,7 +1419,256 @@ export const queries: any[] = [
       'user.fields': 'id,username,name',
       'tweet.fields': 'created_at,author_id',
     },
-    query:
-      'blockchain transparency lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified',
+    query: 'blockchain transparency lang:en -is:retweet -meme -🚀 -t.me -https -http is:verified'
   },
+  {
+    promptId: 144,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(big data crypto analysis) OR (big data blockchain trends) OR (big data crypto market insights) lang:en -is:retweet -copy -spam -irrelevant links -non-related topics -crypto scams -misleading information -sensational claims is:verified"
+  },
+  {
+    promptId: 145,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(Ethereum ETF SEC approval S-1) OR (SEC Ethereum ETF trading impact) lang:en -is:retweet -copy -spam -irrelevant links -non-related topics -crypto scams -misleading information -sensational claims is:verified"
+  },
+  {
+    promptId: 146,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(SEC approves Ethereum ETF) OR (market impact Ethereum ETF S-1) lang:en -is:retweet -copy -spam -irrelevant links -non-related topics -crypto scams -misleading information -sensational claims is:verified"
+  },
+  {
+    promptId: 147,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(Ethereum ETF market response) OR (SEC S-1 Ethereum trading) lang:en -is:retweet -copy -spam -irrelevant links -non-related topics -crypto scams -misleading information -sensational claims is:verified"
+  },
+  {
+    promptId: 148,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(TAO project updates) OR (TAO project latest) lang:en -is:retweet -copy -spam -irrelevant links -non-related topics -crypto scams -misleading information -sensational claims is:verified"
+  },
+  {
+    promptId: 149,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(TAO project announcements) OR (TAO project news) lang:en -is:retweet -copy -spam -irrelevant links -non-related topics -crypto scams -misleading information -sensational claims is:verified"
+  },
+  {
+    promptId: 150,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(TAO project developments) OR (TAO project insights) lang:en -is:retweet -copy -spam -irrelevant links -non-related topics -crypto scams -misleading information -sensational claims is:verified"
+  },
+  {
+    promptId: 151,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(Dogecoin news) OR (Dogecoin price) lang:en -is:retweet -copy -spam is:verified"
+  },
+  {
+    promptId: 152,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(Shiba Inu updates) OR (SHIB burn) lang:en -is:retweet -copy -spam is:verified"
+  },
+  {
+    promptId: 153,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(Pepe meme coin) OR (Pepe crypto news) lang:en -is:retweet -copy -spam is:verified"
+  },
+  {
+    promptId: 154,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(Baby Doge Coin news) OR (Baby Doge Coin charity) lang:en -is:retweet -copy -spam is:verified"
+  },
+  {
+    promptId: 155,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(FLOKI Viking) OR (FLOKI partnerships) lang:en -is:retweet -copy -spam is:verified"
+  },
+  {
+    promptId: 157,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(ArbDoge AI updates) OR (AIDOGE artificial intelligence) lang:en -is:retweet -copy -spam is:verified"
+  },
+  {
+    promptId: 159,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(Wojak coin news) OR (Wojak sentiment) lang:en -is:retweet -copy -spam is:verified"
+  },
+  {
+    promptId: 160,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(Kishu Inu rewards) OR (KISHU token news) lang:en -is:retweet -copy -spam is:verified"
+  },
+  {
+    promptId: 161,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(Bitcoin price trends) OR (Bitcoin market analysis) lang:en -is:retweet -copy -spam -irrelevant links -non-related topics -crypto scams -misleading information -sensational claims is:verified"
+  },
+  {
+    promptId: 162,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(Ethereum scaling solutions) OR (ETH staking updates) lang:en -is:retweet -copy -spam -irrelevant links -non-related topics -crypto scams -misleading information -sensational claims is:verified"
+  },
+  {
+    promptId: 163,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(BNB utility cases) OR (BNB network upgrades) lang:en -is:retweet -copy -spam -irrelevant links -non-related topics -crypto scams -misleading information -sensational claims is:verified"
+  },
+  {
+    promptId: 164,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(Solana speed improvements) OR (SOL protocol developments) lang:en -is:retweet -copy -spam -irrelevant links -non-related topics -crypto scams -misleading information -sensational claims is:verified"
+  },
+  {
+    promptId: 165,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(Toncoin adoption stories) OR (TON scalability features) lang:en -is:retweet -copy -spam -irrelevant links -non-related topics -crypto scams -misleading information -sensational claims is:verified"
+  },
+  {
+    promptId: 166,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(Cardano governance) OR (ADA protocol updates) lang:en -is:retweet -copy -spam -irrelevant links -non-related topics -crypto scams -misleading information -sensational claims is:verified"
+  },
+  {
+    promptId: 167,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(TRON dApps development) OR (TRX market influence) lang:en -is:retweet -copy -spam -irrelevant links -non-related topics -crypto scams -misleading information -sensational claims is:verified"
+  },
+  {
+    promptId: 168,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(Avalanche DeFi expansion) OR (AVAX ecosystem growth) lang:en -is:retweet -copy -spam -irrelevant links -non-related topics -crypto scams -misleading information -sensational claims is:verified"
+  },
+  {
+    promptId: 169,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(Bitcoin Cash payment integrations) OR (BCH adoption rates) lang:en -is:retweet -copy -spam -irrelevant links -non-related topics -crypto scams -misleading information -sensational claims is:verified"
+  },
+  {
+    promptId: 170,
+    queryParams: {
+      "max_results": 50,
+      "start_time": "2024-04-01T05:00:00Z",
+      "user.fields": "id,username,name",
+      "tweet.fields": "created_at,author_id"
+    },
+    query: "(NEAR protocol efficiency) OR (NEAR token utility) lang:en -is:retweet -copy -spam -irrelevant links -non-related topics -crypto scams -misleading information -sensational claims is:verified"
+  }
 ];
